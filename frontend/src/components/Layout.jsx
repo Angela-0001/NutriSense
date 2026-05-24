@@ -24,7 +24,7 @@ const NAV_ITEMS = [
   { label: 'Analysis',       path: '/analysis',   icon: <AnalyticsIcon /> },
   { label: 'Disease Risk',   path: '/bayesian',   icon: <BubbleChartIcon /> },
   { label: 'Claim Validator',path: '/claims',     icon: <FactCheckIcon /> },
-  { label: 'Meal Plan',      path: '/meal-plan',  icon: <CalendarMonthIcon /> },
+  { label: 'Dietary Advice',  path: '/meal-plan',  icon: <CalendarMonthIcon /> },
   { label: 'AI Dataset',     path: '/dataset',    icon: <AutoAwesomeIcon /> },
   { label: 'Profile',        path: '/profile',    icon: <PersonIcon /> },
 ]

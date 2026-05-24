@@ -53,6 +53,18 @@ export default function MealPlanPage() {
 
       {plan && (
         <>
+          {/* Quality report */}
+          {plan.quality_report && (
+            <Box sx={{ mb: 3, p: 2, bgcolor: plan.quality_report.violations?.length === 0 ? 'success.50' : 'warning.50', borderRadius: 2, border: '1px solid', borderColor: plan.quality_report.violations?.length === 0 ? 'success.light' : 'warning.light' }}>
+              <Typography variant="body2" fontWeight={700} color={plan.quality_report.violations?.length === 0 ? 'success.dark' : 'warning.dark'}>
+                {plan.quality_report.violations?.length === 0 ? '✅' : '⚠️'} Meal Plan Quality: {plan.quality_report.passed}/{plan.quality_report.total_meals} meals passed all rules
+                {plan.quality_report.regenerated > 0 && ` · ${plan.quality_report.regenerated} auto-corrected`}
+              </Typography>
+              {plan.quality_report.violations?.map((v, i) => (
+                <Typography key={i} variant="caption" color="warning.dark" display="block">• {v}</Typography>
+              ))}
+            </Box>
+          )}
           {/* Summary */}
           <Grid container spacing={2} sx={{ mb: 3 }}>
             <Grid item xs={6} sm={3}>

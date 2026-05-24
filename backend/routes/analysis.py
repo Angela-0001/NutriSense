@@ -399,3 +399,209 @@ def full_analysis(current_user):
         'reasoning_chain': fc_result['reasoning_chain'],
         'bayesian_risks': bayesian_risks,
     })
+
+
+# ── DIETARY ADVICE ─────────────────────────────────────────────────────────────
+
+# Detailed advice per deficiency — what to eat, when, how much, and why
+DIETARY_ADVICE = {
+    'iron_deficiency': {
+        'nutrient': 'Iron',
+        'unit': 'mg',
+        'why': 'Iron carries oxygen in your blood. Low iron causes fatigue, weakness, and anaemia.',
+        'tip': 'Always pair iron-rich foods with vitamin C (lemon juice, amla, tomato) — it increases absorption by up to 3x. Avoid tea/coffee within 1 hour of iron-rich meals.',
+        'foods': [
+            {'name': 'Methi (fenugreek leaves)',  'amount': '1 katori cooked',  'iron': '1.5mg', 'meal': 'lunch or dinner sabzi'},
+            {'name': 'Spinach (palak)',            'amount': '1 katori cooked',  'iron': '1.8mg', 'meal': 'lunch or dinner sabzi'},
+            {'name': 'Masoor dal (red lentil)',    'amount': '1 katori cooked',  'iron': '2.1mg', 'meal': 'lunch or dinner dal'},
+            {'name': 'Bajra (pearl millet) roti',  'amount': '2 rotis',          'iron': '1.6mg', 'meal': 'replace 1-2 wheat rotis per day'},
+            {'name': 'Til (sesame seeds)',         'amount': '1 tbsp in food',   'iron': '1.3mg', 'meal': 'add to chutney, rice, or sabzi'},
+            {'name': 'Jaggery (gud)',              'amount': '1 small piece',    'iron': '0.9mg', 'meal': 'after lunch instead of sugar'},
+            {'name': 'Drumstick leaves (moringa)', 'amount': '1 katori cooked',  'iron': '2.2mg', 'meal': 'add to dal or sambar'},
+        ],
+        'avoid': ['Tea and coffee with meals', 'Calcium-rich foods at the same time as iron-rich foods'],
+        'weekly_goal': 'Include at least one iron-rich food in both lunch and dinner every day.',
+    },
+    'protein_deficiency': {
+        'nutrient': 'Protein',
+        'unit': 'g',
+        'why': 'Protein builds and repairs muscles, supports immunity, and keeps you full longer.',
+        'tip': 'Combine cereals with pulses at every meal — rice + dal or roti + dal gives you complete protein. Vegetarians need to be especially consistent.',
+        'foods': [
+            {'name': 'Moong dal',                 'amount': '1 katori cooked',  'protein': '7g',  'meal': 'lunch or dinner dal'},
+            {'name': 'Rajma (kidney beans)',       'amount': '1 katori cooked',  'protein': '8g',  'meal': 'lunch — rajma chawal'},
+            {'name': 'Chana dal',                  'amount': '1 katori cooked',  'protein': '9g',  'meal': 'lunch or dinner dal'},
+            {'name': 'Paneer',                     'amount': '50g (1 slice)',     'protein': '9g',  'meal': 'add to sabzi or eat as snack'},
+            {'name': 'Groundnuts (peanuts)',       'amount': '1 small handful',  'protein': '5g',  'meal': 'evening snack or add to poha'},
+            {'name': 'Soyabean',                   'amount': '½ katori cooked',  'protein': '18g', 'meal': 'add to sabzi or make soya curry'},
+            {'name': 'Curd (yogurt)',              'amount': '1 katori',         'protein': '4g',  'meal': 'with every lunch'},
+        ],
+        'avoid': ['Skipping dal at any meal', 'Relying only on rice without a pulse'],
+        'weekly_goal': 'Have dal at both lunch and dinner every day. Add paneer or soya 3-4 times a week.',
+    },
+    'calcium_deficiency': {
+        'nutrient': 'Calcium',
+        'unit': 'mg',
+        'why': 'Calcium keeps bones and teeth strong. Deficiency over time leads to osteoporosis.',
+        'tip': 'Vitamin D is needed to absorb calcium — get 15-20 minutes of morning sunlight daily. Avoid excess salt and caffeine which cause calcium loss.',
+        'foods': [
+            {'name': 'Milk (cow full fat)',        'amount': '1 glass (200ml)',  'calcium': '240mg', 'meal': 'breakfast or bedtime'},
+            {'name': 'Curd (yogurt)',              'amount': '1 katori',         'calcium': '180mg', 'meal': 'with every lunch'},
+            {'name': 'Paneer',                     'amount': '50g',              'calcium': '190mg', 'meal': 'lunch or dinner'},
+            {'name': 'Ragi (finger millet)',       'amount': '2 rotis or 1 dosa','calcium': '210mg', 'meal': 'replace wheat roti 2-3 times a week'},
+            {'name': 'Til (sesame seeds)',         'amount': '1 tbsp',           'calcium': '88mg',  'meal': 'add to chutney or sprinkle on food'},
+            {'name': 'Drumstick leaves (moringa)', 'amount': '1 katori cooked',  'calcium': '440mg', 'meal': 'add to dal or sambar'},
+        ],
+        'avoid': ['Excess tea and coffee', 'High-salt processed foods'],
+        'weekly_goal': 'Have milk or curd every day. Include ragi at least twice a week.',
+    },
+    'vitD_deficiency': {
+        'nutrient': 'Vitamin D',
+        'unit': 'mcg',
+        'why': 'Vitamin D helps absorb calcium and supports immunity. Most Indians are deficient due to indoor lifestyles.',
+        'tip': 'Sunlight is the best source — 15-20 minutes of morning sun (before 10am) on arms and face gives you most of your daily need. Food sources are limited.',
+        'foods': [
+            {'name': 'Egg (whole)',                'amount': '1 egg',            'vitD': '1.1mcg', 'meal': 'breakfast'},
+            {'name': 'Sardines (canned)',          'amount': '50g',              'vitD': '4.5mcg', 'meal': 'lunch'},
+            {'name': 'Milk (fortified)',           'amount': '1 glass',          'vitD': '1.0mcg', 'meal': 'breakfast'},
+            {'name': 'Mushrooms (sun-exposed)',    'amount': '½ katori cooked',  'vitD': '2.0mcg', 'meal': 'add to sabzi'},
+        ],
+        'avoid': ['Staying indoors all day', 'Sunscreen during the morning sun window'],
+        'weekly_goal': 'Get morning sunlight daily. Include eggs or fish 3-4 times a week if non-vegetarian.',
+    },
+    'vitB12_deficiency': {
+        'nutrient': 'Vitamin B12',
+        'unit': 'mcg',
+        'why': 'B12 is essential for nerve function and red blood cell production. Deficiency causes fatigue, numbness, and anaemia. Vegetarians are at high risk.',
+        'tip': 'B12 is found almost exclusively in animal products. Vegetarians should consume dairy daily and consider a B12 supplement if deficient.',
+        'foods': [
+            {'name': 'Milk (cow full fat)',        'amount': '1 glass (200ml)',  'vitB12': '0.9mcg', 'meal': 'breakfast or bedtime'},
+            {'name': 'Curd (yogurt)',              'amount': '1 katori',         'vitB12': '0.4mcg', 'meal': 'with every lunch'},
+            {'name': 'Paneer',                     'amount': '50g',              'vitB12': '0.3mcg', 'meal': 'lunch or dinner'},
+            {'name': 'Egg (whole)',                'amount': '1 egg',            'vitB12': '0.9mcg', 'meal': 'breakfast'},
+            {'name': 'Fish (Rohu)',                'amount': '80g',              'vitB12': '2.0mcg', 'meal': 'lunch or dinner'},
+        ],
+        'avoid': ['Going days without any dairy if vegetarian'],
+        'weekly_goal': 'Have milk and curd every day. If strictly vegetarian and deficient, discuss B12 supplement with a doctor.',
+    },
+    'fibre_deficiency': {
+        'nutrient': 'Dietary Fibre',
+        'unit': 'g',
+        'why': 'Fibre feeds gut bacteria, prevents constipation, and reduces diabetes and heart disease risk.',
+        'tip': 'Switch from refined grains to whole grains. Eat vegetables and pulses at every meal. Eat fruits whole, not as juice.',
+        'foods': [
+            {'name': 'Rajma (kidney beans)',       'amount': '1 katori cooked',  'fibre': '6g',  'meal': 'lunch'},
+            {'name': 'Oats',                       'amount': '1 bowl cooked',    'fibre': '4g',  'meal': 'breakfast'},
+            {'name': 'Whole wheat roti',           'amount': '2 rotis',          'fibre': '3g',  'meal': 'lunch or dinner'},
+            {'name': 'Guava',                      'amount': '1 medium',         'fibre': '5g',  'meal': 'snack'},
+            {'name': 'Flaxseeds (alsi)',           'amount': '1 tbsp',           'fibre': '2.8g','meal': 'add to roti dough or curd'},
+            {'name': 'Moong sprouts',              'amount': '½ katori',         'fibre': '2g',  'meal': 'morning snack or salad'},
+        ],
+        'avoid': ['White rice as the only grain', 'Fruit juices instead of whole fruits', 'Maida-based foods'],
+        'weekly_goal': 'Include pulses at every lunch and dinner. Eat at least 2 servings of vegetables daily.',
+    },
+}
+
+
+@analysis_bp.route('/dietary-advice', methods=['GET'])
+@token_required
+def dietary_advice(current_user):
+    """
+    Run forward chaining on the last 7 days of data and return
+    plain-language dietary advice for each detected deficiency.
+    """
+    from datetime import timedelta
+    today = date.today()
+
+    # Aggregate nutrition over last 7 days
+    total_nutrition = {k: 0.0 for k in ['iron', 'protein', 'calcium', 'vitaminD',
+                                          'vitaminB12', 'vitaminC', 'fibre',
+                                          'sugar', 'fat', 'salt']}
+    days_with_data = 0
+    for i in range(7):
+        d = today - timedelta(days=i)
+        n = _get_daily_nutrition(current_user.id, d)
+        if n:
+            days_with_data += 1
+            for key in total_nutrition:
+                total_nutrition[key] += n.get(key, 0)
+
+    if days_with_data == 0:
+        return jsonify({'error': 'No food log data found. Log your meals first.'}), 404
+
+    # Average over logged days
+    avg_nutrition = {k: round(v / days_with_data, 2) for k, v in total_nutrition.items()}
+    rda = _get_rda(current_user)
+
+    # Run forward chaining
+    facts = {
+        'iron_intake':    avg_nutrition['iron'],
+        'protein_intake': avg_nutrition['protein'],
+        'calcium_intake': avg_nutrition['calcium'],
+        'vitD_intake':    avg_nutrition['vitaminD'],
+        'vitB12_intake':  avg_nutrition['vitaminB12'],
+        'vitC_intake':    avg_nutrition['vitaminC'],
+        'fibre_intake':   avg_nutrition['fibre'],
+        'sugar_intake':   avg_nutrition['sugar'],
+        'fat_intake':     avg_nutrition['fat'],
+        'salt_intake':    avg_nutrition['salt'],
+        'gender':         current_user.gender or 'female',
+        'age':            current_user.age or 30,
+        'diet_type':      current_user.diet_type or 'veg',
+    }
+    rules = build_nutrition_rules(rda)
+    fc = ForwardChainer(facts, rules)
+    result = fc.run()
+
+    # Build advice for each deficiency
+    advice_list = []
+    for deficiency in result['deficiencies']:
+        dtype = deficiency['type']
+        advice = DIETARY_ADVICE.get(dtype, {})
+        nutrient_key = deficiency['nutrient']
+        current_val = avg_nutrition.get(nutrient_key, avg_nutrition.get(
+            nutrient_key.replace('vitamin', 'vitamin'), 0))
+        rda_val = rda.get(nutrient_key, rda.get(nutrient_key, 0))
+        gap = max(0, round(rda_val - current_val, 1))
+        pct = round((current_val / rda_val * 100) if rda_val else 0, 0)
+
+        advice_list.append({
+            'deficiency_type': dtype,
+            'nutrient':        deficiency['name'],
+            'severity':        deficiency.get('severity', 'moderate'),
+            'current_avg':     current_val,
+            'rda':             rda_val,
+            'gap':             gap,
+            'percent_of_rda':  pct,
+            'days_analysed':   days_with_data,
+            'why':             advice.get('why', ''),
+            'tip':             advice.get('tip', ''),
+            'foods_to_add':    advice.get('foods', []),
+            'avoid':           advice.get('avoid', []),
+            'weekly_goal':     advice.get('weekly_goal', ''),
+        })
+
+    # Also return what's going well
+    good_nutrients = []
+    nutrient_map = {
+        'iron': 'Iron', 'protein': 'Protein', 'calcium': 'Calcium',
+        'vitaminD': 'Vitamin D', 'vitaminB12': 'Vitamin B12',
+        'vitaminC': 'Vitamin C', 'fibre': 'Fibre',
+    }
+    deficient_types = {d['nutrient'] for d in result['deficiencies']}
+    for key, label in nutrient_map.items():
+        if label not in deficient_types:
+            rda_val = rda.get(key, 0)
+            current = avg_nutrition.get(key, 0)
+            if rda_val > 0:
+                pct = round(current / rda_val * 100, 0)
+                good_nutrients.append({'nutrient': label, 'percent_of_rda': pct})
+
+    return jsonify({
+        'days_analysed': days_with_data,
+        'avg_nutrition': avg_nutrition,
+        'rda': rda,
+        'deficiencies': advice_list,
+        'adequate_nutrients': good_nutrients,
+        'diet_type': current_user.diet_type,
+    })

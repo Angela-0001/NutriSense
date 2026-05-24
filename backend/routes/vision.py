@@ -21,16 +21,10 @@ GEMINI_URL = (
     'gemini-2.5-flash:generateContent?key={key}'
 )
 
-PROMPT_TEMPLATE = """You are a nutrition assistant helping estimate food portion sizes.
+PROMPT_TEMPLATE = """You are a nutrition assistant. Estimate grams of "{food_name}" visible in this image.
 
-The user has selected the food: "{food_name}"
-
-Look at this image and estimate how many grams of "{food_name}" are visible.
-
-Consider standard Indian serving vessels (katori ~150ml, glass ~200ml, plate ~250-300g).
-
-You MUST respond with ONLY a valid JSON object, no other text:
-{{"estimated_grams": 150, "confidence": "medium", "reasoning": "Standard katori bowl about half full", "range_min": 120, "range_max": 180}}"""
+Reply with ONLY this JSON, nothing else:
+{{"estimated_grams":150,"confidence":"medium","reasoning":"standard katori bowl","range_min":120,"range_max":180}}"""
 
 
 @vision_bp.route('/estimate-portion', methods=['POST'])
@@ -67,7 +61,7 @@ def estimate_portion(current_user):
         }],
         'generationConfig': {
             'temperature': 0.1,
-            'maxOutputTokens': 512,
+            'maxOutputTokens': 128,
         }
     }
 
@@ -83,27 +77,49 @@ def estimate_portion(current_user):
         text = data['candidates'][0]['content']['parts'][0]['text'].strip()
         logger.info(f'Gemini raw response: {text}')
 
-        # Strip markdown code fences
         text = re.sub(r'```(?:json)?\s*', '', text).strip()
         text = re.sub(r'```', '', text).strip()
 
-        # Extract JSON object even if surrounded by extra text
-        json_match = re.search(r'\{[^{}]*\}', text, re.DOTALL)
-        if json_match:
-            text = json_match.group(0)
+        # Extract JSON — handle truncated responses by pulling known fields directly
+        grams = 100
+        confidence = 'medium'
+        reasoning = ''
+        range_min = 70
+        range_max = 130
 
-        result = json.loads(text)
+        # Try full JSON parse first
+        try:
+            json_match = re.search(r'\{.*\}', text, re.DOTALL)
+            if json_match:
+                result = json.loads(json_match.group(0))
+                grams = int(result.get('estimated_grams', 100))
+                confidence = result.get('confidence', 'medium')
+                reasoning = result.get('reasoning', '')
+                range_min = int(result.get('range_min', max(5, grams - 30)))
+                range_max = int(result.get('range_max', grams + 30))
+        except (json.JSONDecodeError, ValueError):
+            # Fallback: extract estimated_grams with regex even from truncated JSON
+            m = re.search(r'"estimated_grams"\s*:\s*(\d+)', text)
+            if m:
+                grams = int(m.group(1))
+                range_min = max(5, grams - 30)
+                range_max = grams + 30
+            m2 = re.search(r'"confidence"\s*:\s*"(\w+)"', text)
+            if m2:
+                confidence = m2.group(1)
+            m3 = re.search(r'"reasoning"\s*:\s*"([^"]+)"', text)
+            if m3:
+                reasoning = m3.group(1)
 
-        grams = int(result.get('estimated_grams', 100))
         grams = max(5, min(grams, 2000))
 
         return jsonify({
             'food_name': food_name,
             'estimated_grams': grams,
-            'range_min': int(result.get('range_min', max(5, grams - 30))),
-            'range_max': int(result.get('range_max', grams + 30)),
-            'confidence': result.get('confidence', 'medium'),
-            'reasoning': result.get('reasoning', ''),
+            'range_min': range_min,
+            'range_max': range_max,
+            'confidence': confidence,
+            'reasoning': reasoning,
         })
 
     except requests.exceptions.Timeout:
@@ -126,7 +142,6 @@ def estimate_portion(current_user):
         raw = text if 'text' in dir() else 'no response'
         logger.error(f'Parse error: {e} — raw: {raw}')
         return jsonify({'error': f'Could not parse Gemini response: {raw[:200]}'}), 502
-
     except Exception as e:
         logger.error(f'Vision estimate error: {e}')
         return jsonify({'error': str(e)}), 500

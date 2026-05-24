@@ -10,10 +10,9 @@ import FoodLogPage from './pages/FoodLogPage'
 import AnalysisPage from './pages/AnalysisPage'
 import BayesianPage from './pages/BayesianPage'
 import ClaimValidatorPage from './pages/ClaimValidatorPage'
-import MealPlanPage from './pages/MealPlanPage'
-import ProfilePage from './pages/ProfilePage'
-
+import DietaryAdvicePage from './pages/DietaryAdvicePage'
 import DatasetGenPage from './pages/DatasetGenPage'
+import ProfilePage from './pages/ProfilePage'
 
 function PrivateRoute({ children }) {
   const { user, loading } = useAuth()
@@ -36,7 +35,7 @@ export default function App() {
         <Route path="analysis"      element={<AnalysisPage />} />
         <Route path="bayesian"      element={<BayesianPage />} />
         <Route path="claims"        element={<ClaimValidatorPage />} />
-        <Route path="meal-plan"     element={<MealPlanPage />} />
+        <Route path="meal-plan"     element={<DietaryAdvicePage />} />
         <Route path="dataset"       element={<DatasetGenPage />} />
         <Route path="profile"       element={<ProfilePage />} />
       </Route>

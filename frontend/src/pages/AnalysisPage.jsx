@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {
   Box, Card, CardContent, Typography, Button, CircularProgress,
   TextField, Chip, Accordion, AccordionSummary, AccordionDetails,
-  Alert, Divider, List, ListItem, ListItemText, Grid, Tab, Tabs
+  Alert, Divider, List, ListItem, ListItemText, Grid, Tab, Tabs, MenuItem
 } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import api from '../api/api'
@@ -103,18 +103,9 @@ export default function AnalysisPage() {
                         <Typography variant="h6">{d.name}</Typography>
                         <Box sx={{ display: 'flex', gap: 0.5 }}>
                           <Chip label={d.severity} color={severityColor(d.severity)} size="small" />
-                          {d.data_confidence?.has_ai_estimated_foods && (
-                            <Chip label="~AI data" size="small" color="warning" variant="outlined" />
-                          )}
                         </Box>
                       </Box>
                       <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>{d.health_impact}</Typography>
-
-                      {d.data_confidence?.has_ai_estimated_foods && (
-                        <Alert severity="warning" sx={{ mb: 1.5, py: 0.5 }}>
-                          <Typography variant="caption">{d.data_confidence.accuracy_note}</Typography>
-                        </Alert>
-                      )}
 
                       <Typography variant="body2" fontWeight={600} sx={{ mb: 0.5 }}>Recommended foods:</Typography>
                       {d.recommended_foods_context ? (
@@ -171,7 +162,7 @@ export default function AnalysisPage() {
                       <Typography variant="caption" fontWeight={600}>Conditions matched:</Typography>
                       {step.conditions_matched.map((c, j) => (
                         <Typography key={j} variant="caption" display="block" sx={{ ml: 1 }}>
-                          • {c.fact} {c.op} {c.threshold} (actual: {c.actual_value?.toFixed?.(2) ?? c.actual_value})
+                          • {c.fact} {c.op} {c.threshold} (actual: {String(c.actual_value ?? '')})
                         </Typography>
                       ))}
                     </AccordionDetails>
@@ -191,7 +182,7 @@ export default function AnalysisPage() {
               {['anaemia_risk','diabetes_risk','bp_risk','osteoporosis_risk',
                 'iron_deficiency','protein_deficiency','calcium_deficiency',
                 'vitD_deficiency','vitB12_deficiency'].map(g => (
-                <option key={g} value={g} style={{ padding: 8 }}>{g.replace(/_/g, ' ')}</option>
+                <MenuItem key={g} value={g}>{g.replace(/_/g, ' ')}</MenuItem>
               ))}
             </TextField>
             <Button variant="contained" onClick={runBC} disabled={loading}>

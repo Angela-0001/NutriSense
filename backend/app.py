@@ -55,6 +55,7 @@ def create_app():
     from routes.meal_plan import meal_plan_bp
     from routes.vision import vision_bp
     from routes.dataset_gen import dataset_bp
+    from routes.unit_convert import unit_bp
 
     app.register_blueprint(auth_bp,      url_prefix='/api/auth')
     app.register_blueprint(foods_bp,     url_prefix='/api/foods')
@@ -63,6 +64,7 @@ def create_app():
     app.register_blueprint(meal_plan_bp, url_prefix='/api/meal-plan')
     app.register_blueprint(vision_bp,    url_prefix='/api/vision')
     app.register_blueprint(dataset_bp,   url_prefix='/api/dataset')
+    app.register_blueprint(unit_bp,      url_prefix='/api/unit')
 
     @app.route('/api/health')
     def health():
