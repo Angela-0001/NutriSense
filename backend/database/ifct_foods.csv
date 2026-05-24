@@ -1,0 +1,181 @@
+name,name_hindi,food_group,region,diet_type,calories,protein,iron,calcium,vitaminC,vitaminD,vitaminB12,carbs,fat,fibre,sugar,sodium,price_per_100g_inr,source
+Rice (raw),Chawal,cereals,pan-india,veg,345,6.8,0.7,10,0,0,0,78.2,0.5,0.2,0.1,5,4.5,IFCT2017
+Rice (cooked),Chawal (pakka),cereals,pan-india,veg,130,2.7,0.3,4,0,0,0,28.1,0.3,0.1,0,2,2.0,IFCT2017
+Wheat flour (atta),Gehun atta,cereals,north-india,veg,341,11.8,4.9,48,0,0,0,69.4,1.7,1.9,0.3,2,3.5,IFCT2017
+Roti (wheat),Chapati,cereals,north-india,veg,297,9.7,4.0,42,0,0,0,61.0,3.7,1.9,0.3,190,2.5,IFCT2017
+Jowar (sorghum),Jowar,millets,pan-india,veg,349,10.4,4.1,25,0,0,0,72.6,1.9,1.6,0,4,3.0,IFCT2017
+Bajra (pearl millet),Bajra,millets,west-india,veg,361,11.6,8.0,42,0,0,0,67.5,5.0,1.2,0,5,3.5,IFCT2017
+Ragi (finger millet),Ragi,millets,south-india,veg,328,7.3,3.9,344,0,0,0,72.0,1.3,3.6,0,11,4.0,IFCT2017
+Oats,Oats,cereals,pan-india,veg,389,16.9,4.7,54,0,0,0,66.3,6.9,10.6,0,2,12.0,IFCT2017
+Poha (flattened rice),Poha,cereals,pan-india,veg,333,6.3,2.7,14,0,0,0,76.9,1.2,0.2,0,8,5.0,IFCT2017
+Upma (semolina),Upma,cereals,south-india,veg,150,4.5,1.2,18,2,0,0,28.0,3.5,0.8,1,320,3.0,IFCT2017
+Toor dal (pigeon pea),Toor dal,pulses,pan-india,veg,335,22.3,2.7,73,1.9,0,0,57.6,1.7,15.0,0,28,8.0,IFCT2017
+Moong dal (green gram),Moong dal,pulses,pan-india,veg,334,24.0,4.4,124,1.0,0,0,56.7,1.3,4.1,0,28,7.0,IFCT2017
+Chana dal (bengal gram),Chana dal,pulses,pan-india,veg,360,20.8,5.3,202,3.0,0,0,59.8,5.6,7.6,0,30,9.0,IFCT2017
+Rajma (kidney beans),Rajma,pulses,north-india,veg,333,22.9,5.1,260,0,0,0,60.6,1.3,25.0,0,28,12.0,IFCT2017
+Chole (chickpeas),Kabuli chana,pulses,north-india,veg,364,17.4,4.3,105,1.3,0,0,60.6,6.0,17.4,0,24,10.0,IFCT2017
+Masoor dal (red lentil),Masoor dal,pulses,pan-india,veg,343,25.1,7.6,68,1.5,0,0,59.0,0.7,11.7,0,30,8.0,IFCT2017
+Urad dal (black gram),Urad dal,pulses,south-india,veg,347,24.0,3.8,154,0,0,0,59.6,1.4,0.9,0,38,9.0,IFCT2017
+Soyabean,Soya,pulses,pan-india,veg,432,43.2,10.4,240,0,0,0,20.9,19.5,3.7,0,2,15.0,IFCT2017
+Moong sprouts,Ankurit moong,pulses,pan-india,veg,30,3.0,0.9,13,13.2,0,0,5.9,0.2,0.8,0,6,5.0,IFCT2017
+Spinach,Palak,vegetables,pan-india,veg,26,2.0,1.14,99,28.1,0,0,3.6,0.4,0.6,0.4,79,4.0,IFCT2017
+Methi (fenugreek leaves),Methi,vegetables,pan-india,veg,49,4.4,1.93,395,52.9,0,0,6.0,0.9,1.1,0,76,5.0,IFCT2017
+Drumstick leaves (moringa),Sahjan patta,vegetables,south-india,veg,92,6.7,7.0,440,220.0,0,0,12.5,1.7,0.9,0,9,6.0,IFCT2017
+Broccoli,Broccoli,vegetables,pan-india,veg,34,2.8,0.73,47,89.2,0,0,6.6,0.4,2.6,1.7,33,25.0,IFCT2017
+Carrot,Gajar,vegetables,north-india,veg,41,0.9,0.3,27,5.9,0,0,9.6,0.2,2.8,4.7,69,4.0,IFCT2017
+Beetroot,Chukandar,vegetables,north-india,veg,43,1.6,0.8,16,4.9,0,0,9.6,0.2,2.8,6.8,78,6.0,IFCT2017
+Sweet potato,Shakarkand,vegetables,pan-india,veg,86,1.6,0.6,30,2.4,0,0,20.1,0.1,3.0,4.2,55,5.0,IFCT2017
+Pumpkin,Kaddu,vegetables,pan-india,veg,26,1.0,0.8,21,9.0,0,0,6.5,0.1,0.5,2.8,1,3.0,IFCT2017
+Bitter gourd,Karela,vegetables,pan-india,veg,17,1.0,0.6,20,84.0,0,0,3.7,0.2,2.8,0,5,8.0,IFCT2017
+Bottle gourd,Lauki,vegetables,pan-india,veg,12,0.2,0.2,26,10.1,0,0,2.5,0.1,0.5,0,2,3.0,IFCT2017
+Tomato,Tamatar,vegetables,pan-india,veg,18,0.9,0.4,13,27.0,0,0,3.9,0.2,1.2,2.6,5,4.0,IFCT2017
+Onion,Pyaz,vegetables,pan-india,veg,40,1.2,0.4,46,11.0,0,0,9.3,0.1,1.7,4.2,4,3.0,IFCT2017
+Garlic,Lahsun,vegetables,pan-india,veg,149,6.4,1.7,181,31.2,0,0,33.1,0.5,2.1,1.0,17,8.0,IFCT2017
+Ginger,Adrak,vegetables,pan-india,veg,80,1.8,0.6,16,5.0,0,0,17.8,0.8,2.0,1.7,13,6.0,IFCT2017
+Banana,Kela,fruits,pan-india,veg,89,1.1,0.3,5,8.7,0,0,22.8,0.3,2.6,12.2,1,3.0,IFCT2017
+Apple,Seb,fruits,north-india,veg,52,0.3,0.1,6,4.6,0,0,13.8,0.2,2.4,10.4,1,15.0,IFCT2017
+Orange,Santra,fruits,pan-india,veg,47,0.9,0.1,40,53.2,0,0,11.8,0.1,2.4,9.4,0,8.0,IFCT2017
+Guava,Amrood,fruits,pan-india,veg,68,2.6,0.3,18,228.3,0,0,14.3,1.0,5.4,8.9,2,6.0,IFCT2017
+Papaya,Papita,fruits,pan-india,veg,43,0.5,0.1,20,61.8,0,0,10.8,0.1,1.7,7.8,8,5.0,IFCT2017
+Mango,Aam,fruits,pan-india,veg,60,0.8,0.1,11,36.4,0,0,15.0,0.4,1.6,13.7,1,8.0,IFCT2017
+Amla (Indian gooseberry),Amla,fruits,pan-india,veg,44,0.9,1.2,50,600.0,0,0,10.2,0.6,3.4,0,3,5.0,IFCT2017
+Watermelon,Tarbooz,fruits,pan-india,veg,30,0.6,0.2,7,8.1,0,0,7.6,0.2,0.4,6.2,1,4.0,IFCT2017
+Pomegranate,Anar,fruits,pan-india,veg,83,1.7,0.3,10,10.2,0,0,18.7,1.2,4.0,13.7,3,20.0,IFCT2017
+Dates (dried),Khajoor,fruits,pan-india,veg,277,1.8,0.9,64,0,0,0,74.9,0.2,6.7,63.4,1,25.0,IFCT2017
+Figs (dried),Anjeer,fruits,pan-india,veg,249,3.3,2.0,162,1.2,0,0,63.9,0.9,9.8,47.9,10,40.0,IFCT2017
+Milk (cow full fat),Doodh,dairy,pan-india,veg,61,3.2,0.1,120,1.0,0.1,0.4,4.4,3.3,0,4.8,43,6.0,IFCT2017
+Curd (yogurt),Dahi,dairy,pan-india,veg,98,3.1,0.1,149,1.0,0.1,0.4,3.4,4.3,0,3.2,46,8.0,IFCT2017
+Paneer (cottage cheese),Paneer,dairy,pan-india,veg,265,18.3,0.2,480,0,0.5,0.8,1.2,20.8,0,0.4,30,50.0,IFCT2017
+Buttermilk,Chaas,dairy,pan-india,veg,40,3.3,0.1,116,1.0,0.1,0.4,4.8,0.9,0,4.8,105,4.0,IFCT2017
+Ghee,Ghee,dairy,pan-india,veg,900,0,0,0,0,0,0,0,99.7,0,0,2,80.0,IFCT2017
+Egg (whole),Anda,eggs,pan-india,eggetarian,155,13.0,1.8,56,0,2.0,1.1,1.1,10.6,0,1.1,124,8.0,IFCT2017
+Egg white,Anda safed,eggs,pan-india,eggetarian,52,10.9,0.1,7,0,0,0.1,0.7,0.2,0,0.6,166,5.0,IFCT2017
+Chicken breast,Murgi,nonveg,pan-india,nonveg,165,31.0,1.0,15,0,0.1,0.3,0,3.6,0,0,74,25.0,IFCT2017
+Mutton (goat),Bakra gosht,nonveg,pan-india,nonveg,294,18.5,2.7,12,0,0,2.6,0,25.6,0,0,72,40.0,IFCT2017
+Fish Rohu,Rohu machli,nonveg,east-india,nonveg,97,16.6,1.0,650,0,0,1.5,0,3.4,0,0,72,20.0,IFCT2017
+Fish Pomfret,Paplet,nonveg,west-india,nonveg,96,17.5,1.0,200,0,0,1.5,0,2.9,0,0,65,35.0,IFCT2017
+Prawns,Jhinga,nonveg,coastal,nonveg,99,20.3,1.7,70,0,0,1.5,0.9,1.7,0,0,111,50.0,IFCT2017
+Sardines (canned),Sardine,nonveg,coastal,nonveg,208,24.6,2.9,382,0,4.8,8.9,0,11.5,0,0,505,30.0,IFCT2017
+Groundnuts (peanuts),Moongphali,nuts,pan-india,veg,567,25.8,4.6,92,0,0,0,16.1,49.2,8.5,4.7,18,15.0,IFCT2017
+Almonds,Badam,nuts,pan-india,veg,579,21.2,3.7,264,0,0,0,21.6,49.9,12.5,4.4,1,80.0,IFCT2017
+Walnuts,Akhrot,nuts,north-india,veg,654,15.2,2.9,98,1.3,0,0,13.7,65.2,6.7,2.6,2,100.0,IFCT2017
+Cashews,Kaju,nuts,pan-india,veg,553,18.2,6.7,37,0.5,0,0,30.2,43.9,3.3,5.9,12,70.0,IFCT2017
+Til (sesame seeds),Til,seeds,pan-india,veg,573,17.7,14.6,975,0,0,0,23.5,49.7,11.8,0.3,11,20.0,IFCT2017
+Flaxseeds,Alsi,seeds,pan-india,veg,534,18.3,5.7,255,0.6,0,0,28.9,42.2,27.3,1.6,30,25.0,IFCT2017
+Sunflower seeds,Surajmukhi beej,seeds,pan-india,veg,584,20.8,5.3,78,1.4,0,0,20.0,51.5,8.6,2.6,9,30.0,IFCT2017
+Idli,Idli,dishes,south-india,veg,58,2.0,0.5,14,0,0,0,11.4,0.4,0.5,0.2,185,3.0,IFCT2017
+Dosa,Dosa,dishes,south-india,veg,168,3.4,0.8,18,0,0,0,30.0,4.5,0.5,0.3,250,4.0,IFCT2017
+Sambar,Sambar,dishes,south-india,veg,55,3.0,1.2,40,8.0,0,0,8.5,1.5,2.0,2.0,380,5.0,IFCT2017
+Dal tadka,Dal tadka,dishes,north-india,veg,120,7.0,2.5,50,2.0,0,0,16.0,3.5,3.5,1.0,420,6.0,IFCT2017
+Chole bhature,Chole bhature,dishes,north-india,veg,350,10.0,3.5,80,2.0,0,0,45.0,14.0,6.0,2.0,520,15.0,IFCT2017
+Biryani (chicken),Biryani,dishes,pan-india,nonveg,200,12.0,1.5,30,0,0,0.2,25.0,6.0,1.0,0.5,480,20.0,IFCT2017
+Khichdi,Khichdi,dishes,pan-india,veg,130,5.5,1.5,30,0,0,0,22.0,3.0,2.0,0.5,350,5.0,IFCT2017
+Poha (cooked),Poha,dishes,pan-india,veg,180,3.5,1.5,15,5.0,0,0,35.0,4.0,1.0,1.0,280,4.0,IFCT2017
+Pav bhaji,Pav bhaji,dishes,west-india,veg,220,5.5,2.0,60,15.0,0,0,32.0,7.5,3.5,4.0,580,12.0,IFCT2017
+Vada pav,Vada pav,dishes,west-india,veg,290,6.0,1.8,40,5.0,0,0,42.0,10.0,2.5,2.0,520,8.0,IFCT2017
+Masala dosa,Masala dosa,dishes,south-india,veg,210,5.0,1.5,35,8.0,0,0,32.0,7.0,2.0,1.5,380,10.0,IFCT2017
+Uttapam,Uttapam,dishes,south-india,veg,175,5.5,1.2,40,6.0,0,0,28.0,5.0,1.5,2.0,320,8.0,IFCT2017
+Aloo paratha,Aloo paratha,dishes,north-india,veg,260,6.0,2.5,35,5.0,0,0,38.0,9.0,2.5,1.0,420,6.0,IFCT2017
+Palak paneer,Palak paneer,dishes,north-india,veg,180,9.0,2.5,220,15.0,0.2,0.3,8.0,12.0,2.0,2.0,380,15.0,IFCT2017
+Rajma chawal,Rajma chawal,dishes,north-india,veg,195,9.5,2.8,80,1.0,0,0,32.0,4.0,5.0,1.0,350,8.0,IFCT2017
+Pongal,Pongal,dishes,south-india,veg,160,5.0,1.2,25,0,0,0,28.0,4.5,1.5,0.5,280,5.0,IFCT2017
+Rasam,Rasam,dishes,south-india,veg,30,1.5,0.8,20,15.0,0,0,5.0,0.5,0.5,1.5,380,3.0,IFCT2017
+Curd rice,Thayir sadam,dishes,south-india,veg,145,4.5,0.3,120,0.5,0.1,0.3,25.0,3.5,0.3,2.0,180,4.0,IFCT2017
+Lemon rice,Chitranna,dishes,south-india,veg,175,3.5,0.8,15,8.0,0,0,32.0,4.5,0.5,0.5,280,4.0,IFCT2017
+Pulao (veg),Pulao,dishes,pan-india,veg,185,4.5,1.2,30,3.0,0,0,32.0,5.0,1.5,1.0,380,8.0,IFCT2017
+Halwa (suji),Suji halwa,dishes,north-india,veg,280,4.5,1.5,20,0,0,0,42.0,10.0,0.5,20.0,80,8.0,IFCT2017
+Kheer,Kheer,dishes,pan-india,veg,150,4.5,0.3,140,0.5,0.1,0.4,22.0,5.0,0.2,18.0,55,10.0,IFCT2017
+Lassi (sweet),Lassi,dairy,north-india,veg,120,4.0,0.1,140,0.5,0.1,0.4,18.0,4.0,0,15.0,55,8.0,IFCT2017
+Coconut (fresh),Nariyal,nuts,south-india,veg,354,3.3,2.4,14,3.3,0,0,15.2,33.5,9.0,6.2,20,5.0,IFCT2017
+Coconut milk,Nariyal doodh,dairy,south-india,veg,230,2.3,1.6,16,2.8,0,0,5.5,23.8,2.2,3.3,15,15.0,IFCT2017
+Tamarind,Imli,condiments,south-india,veg,239,2.8,2.8,74,3.5,0,0,62.5,0.6,5.1,38.8,28,10.0,IFCT2017
+Turmeric,Haldi,spices,pan-india,veg,354,7.8,41.4,183,25.9,0,0,64.9,9.9,21.1,3.2,38,15.0,IFCT2017
+Cumin seeds,Jeera,spices,pan-india,veg,375,17.8,66.4,931,7.7,0,0,44.2,22.3,10.5,2.3,168,20.0,IFCT2017
+Coriander leaves,Dhaniya patta,vegetables,pan-india,veg,23,2.1,1.77,67,27.0,0,0,3.7,0.5,2.8,0.9,46,5.0,IFCT2017
+Curry leaves,Kadi patta,vegetables,south-india,veg,108,6.1,0.93,830,4.0,0,0,18.7,1.0,6.4,0,9,8.0,IFCT2017
+Mustard seeds,Rai,spices,pan-india,veg,508,26.1,9.9,266,7.1,0,0,28.1,36.2,12.2,6.8,13,15.0,IFCT2017
+Jaggery,Gur,sweeteners,pan-india,veg,383,0.4,11.4,80,7.0,0,0,98.0,0.1,0,97.0,30,8.0,IFCT2017
+Honey,Shahad,sweeteners,pan-india,veg,304,0.3,0.4,6,0.5,0,0,82.4,0,0.2,82.1,4,40.0,IFCT2017
+Sugarcane juice,Ganne ka ras,beverages,pan-india,veg,73,0.2,0.4,10,0,0,0,18.4,0.1,0,17.0,3,3.0,IFCT2017
+Coconut water,Nariyal pani,beverages,coastal,veg,19,0.7,0.3,24,2.4,0,0,3.7,0.2,1.1,2.6,105,5.0,IFCT2017
+Lemon juice,Nimbu ras,beverages,pan-india,veg,22,0.4,0.1,11,38.7,0,0,6.9,0.2,0.3,2.5,1,3.0,IFCT2017
+Cauliflower,Phool gobhi,vegetables,north-india,veg,25,1.9,0.4,22,48.2,0,0,5.0,0.3,2.0,1.9,30,8.0,IFCT2017
+Cabbage,Patta gobhi,vegetables,pan-india,veg,25,1.3,0.5,40,36.6,0,0,5.8,0.1,2.5,3.2,18,5.0,IFCT2017
+Lady finger (okra),Bhindi,vegetables,pan-india,veg,33,1.9,0.6,66,23.0,0,0,7.5,0.2,3.2,1.5,7,6.0,IFCT2017
+Capsicum (green),Shimla mirch,vegetables,pan-india,veg,20,0.9,0.4,10,80.4,0,0,4.6,0.3,1.7,2.4,3,12.0,IFCT2017
+Capsicum (red),Lal shimla mirch,vegetables,pan-india,veg,31,1.0,0.4,7,127.7,0,0,6.0,0.3,2.1,4.2,4,15.0,IFCT2017
+Peas (green),Matar,vegetables,north-india,veg,81,5.4,1.5,25,40.0,0,0,14.5,0.4,5.1,5.7,5,8.0,IFCT2017
+Corn (maize),Makka,cereals,pan-india,veg,86,3.3,0.5,2,6.8,0,0,19.0,1.4,2.7,3.2,15,5.0,IFCT2017
+Potato,Aloo,vegetables,pan-india,veg,77,2.0,0.8,12,19.7,0,0,17.5,0.1,2.2,0.8,6,3.0,IFCT2017
+Brinjal (eggplant),Baingan,vegetables,pan-india,veg,25,1.0,0.2,9,2.2,0,0,5.9,0.2,3.0,3.5,2,4.0,IFCT2017
+Drumstick (moringa pods),Sahjan,vegetables,south-india,veg,37,2.1,0.4,30,141.0,0,0,8.5,0.1,3.2,0,42,8.0,IFCT2017
+Jackfruit (raw),Kathal,fruits,south-india,veg,95,1.7,0.6,24,13.7,0,0,23.2,0.6,1.5,19.1,2,6.0,IFCT2017
+Pineapple,Ananas,fruits,pan-india,veg,50,0.5,0.3,13,47.8,0,0,13.1,0.1,1.4,9.9,1,8.0,IFCT2017
+Grapes,Angoor,fruits,pan-india,veg,69,0.7,0.4,10,10.8,0,0,18.1,0.2,0.9,15.5,2,20.0,IFCT2017
+Litchi,Litchi,fruits,east-india,veg,66,0.8,0.3,5,71.5,0,0,16.5,0.4,1.3,15.2,1,15.0,IFCT2017
+Chikoo (sapota),Chikoo,fruits,west-india,veg,83,0.4,0.8,21,14.7,0,0,19.9,1.1,5.3,14.7,12,10.0,IFCT2017
+Kokum,Kokum,fruits,west-india,veg,55,0.5,1.0,30,12.0,0,0,14.3,0.1,1.5,0,5,15.0,IFCT2017
+Ber (Indian jujube),Ber,fruits,pan-india,veg,79,0.8,0.5,21,76.0,0,0,20.2,0.1,0.6,0,3,5.0,IFCT2017
+Jamun (black plum),Jamun,fruits,pan-india,veg,62,0.7,0.2,15,18.0,0,0,14.0,0.3,0.6,0,26,10.0,IFCT2017
+Custard apple,Sitaphal,fruits,pan-india,veg,101,1.7,0.7,17,36.3,0,0,25.2,0.6,2.4,0,4,15.0,IFCT2017
+Avocado,Makhanphal,fruits,south-india,veg,160,2.0,0.6,12,10.0,0,0,8.5,14.7,6.7,0.7,7,50.0,IFCT2017
+Milk (buffalo),Bhains ka doodh,dairy,pan-india,veg,117,4.3,0.2,195,1.0,0.1,0.4,5.2,8.0,0,4.9,52,7.0,IFCT2017
+Skimmed milk,Toned doodh,dairy,pan-india,veg,35,3.4,0.1,120,1.0,0.1,0.4,5.0,0.1,0,5.0,50,5.0,IFCT2017
+Cheese (processed),Cheese,dairy,pan-india,veg,321,20.0,0.2,700,0,0.5,0.8,2.0,26.0,0,0.5,1200,60.0,IFCT2017
+Tofu,Tofu,pulses,pan-india,veg,76,8.1,1.5,350,0.1,0,0,1.9,4.8,0.3,0.3,7,30.0,IFCT2017
+Soya milk,Soya doodh,pulses,pan-india,vegan,54,3.3,0.6,25,0,0,0,6.3,1.8,0.6,4.0,51,15.0,IFCT2017
+Pumpkin seeds,Kaddu ke beej,seeds,pan-india,veg,559,30.2,8.8,46,1.9,0,0,10.7,49.1,6.0,1.4,7,40.0,IFCT2017
+Chia seeds,Chia,seeds,pan-india,veg,486,16.5,7.7,631,1.6,0,0,42.1,30.7,34.4,0,16,60.0,IFCT2017
+Hemp seeds,Hemp,seeds,pan-india,veg,553,31.6,7.9,70,0.5,0,0,8.7,48.8,4.0,1.5,5,80.0,IFCT2017
+Amaranth (rajgira),Rajgira,cereals,pan-india,veg,371,13.6,7.6,159,4.2,0,0,65.3,7.0,6.7,1.7,4,12.0,IFCT2017
+Quinoa,Quinoa,cereals,pan-india,veg,368,14.1,4.6,47,0,0,0,64.2,6.1,7.0,0,5,80.0,IFCT2017
+Barley,Jau,cereals,north-india,veg,354,12.5,6.0,33,0,0,0,73.5,2.3,17.3,0.8,12,6.0,IFCT2017
+Corn flour,Makka atta,cereals,pan-india,veg,361,6.9,2.4,7,0,0,0,76.8,3.9,7.3,0.6,5,8.0,IFCT2017
+Besan (chickpea flour),Besan,pulses,pan-india,veg,387,22.5,4.6,45,0,0,0,57.8,6.7,10.9,10.9,64,12.0,IFCT2017
+Sattu (roasted gram flour),Sattu,pulses,east-india,veg,406,20.6,9.0,90,0,0,0,65.2,7.2,1.35,0,7,15.0,IFCT2017
+Maida (refined flour),Maida,cereals,pan-india,veg,348,10.3,2.7,23,0,0,0,73.9,0.9,0.3,0.3,2,4.0,IFCT2017
+Suji (semolina),Suji,cereals,pan-india,veg,360,10.4,4.7,17,0,0,0,74.2,1.0,3.9,0.5,1,5.0,IFCT2017
+Sabudana (tapioca),Sabudana,cereals,pan-india,veg,350,0.2,1.6,20,0,0,0,86.7,0.2,0.9,0,1,8.0,IFCT2017
+Lotus seeds (makhana),Makhana,seeds,east-india,veg,347,9.7,1.4,60,0,0,0,76.9,0.1,14.5,0,1,60.0,IFCT2017
+Fox nuts (phool makhana),Makhana phool,seeds,east-india,veg,362,9.7,1.4,60,0,0,0,76.9,0.1,14.5,0,1,80.0,IFCT2017
+Moringa powder,Sahjan powder,supplements,south-india,veg,205,27.1,28.2,2003,17.3,0,0,38.2,2.3,19.2,0,9,50.0,IFCT2017
+Liver (chicken),Murgi ka kaleji,nonveg,pan-india,nonveg,119,16.9,9.0,11,27.9,0.5,16.6,0.7,4.8,0,0,71,20.0,IFCT2017
+Liver (mutton),Bakre ka kaleji,nonveg,pan-india,nonveg,154,20.6,6.3,8,33.0,0.5,65.0,3.9,5.1,0,0,76,35.0,IFCT2017
+Tuna (canned),Tuna,nonveg,coastal,nonveg,116,25.5,1.3,11,0,3.7,2.5,0,2.5,0,0,247,30.0,IFCT2017
+Mackerel,Bangda,nonveg,coastal,nonveg,205,18.6,1.4,66,0,16.1,8.7,0,14.0,0,0,90,25.0,IFCT2017
+Hilsa fish,Hilsa,nonveg,east-india,nonveg,273,21.8,1.0,180,0,0,0,0,20.5,0,0,72,30.0,IFCT2017
+Crab,Kekda,nonveg,coastal,nonveg,97,19.5,0.7,89,0,0,9.0,0,1.8,0,0,293,40.0,IFCT2017
+Clams,Seep,nonveg,coastal,nonveg,74,12.8,13.9,46,0,0,98.9,3.4,1.0,0,0,56,35.0,IFCT2017
+Mutton liver,Kaleji,nonveg,pan-india,nonveg,154,20.6,6.3,8,33.0,0.5,65.0,3.9,5.1,0,0,76,35.0,IFCT2017
+Duck egg,Batakh anda,eggs,pan-india,eggetarian,185,13.0,3.8,64,0,2.2,3.8,1.4,13.8,0,0,146,10.0,IFCT2017
+Quail egg,Bater anda,eggs,pan-india,eggetarian,158,13.1,3.7,64,0,1.4,1.6,0.4,11.1,0,0,141,15.0,IFCT2017
+Peanut butter,Moongphali makkhan,nuts,pan-india,veg,588,25.1,1.7,49,0,0,0,20.1,50.4,6.0,9.2,17,40.0,IFCT2017
+Almond milk,Badam doodh,dairy,pan-india,veg,60,1.1,0.4,184,0,1.1,0,8.1,2.5,0.5,7.0,72,25.0,IFCT2017
+Green tea,Hari chai,beverages,pan-india,veg,1,0.2,0.1,1,0,0,0,0.2,0,0,0,1,5.0,IFCT2017
+Tulsi (holy basil),Tulsi,herbs,pan-india,veg,22,3.2,3.2,177,18.0,0,0,2.7,0.6,1.6,0.3,4,5.0,IFCT2017
+Ashwagandha powder,Ashwagandha,supplements,pan-india,veg,245,3.9,3.3,23,0,0,0,49.9,0.3,32.3,0,0,80.0,IFCT2017
+Triphala powder,Triphala,supplements,pan-india,veg,200,2.0,5.0,100,50.0,0,0,50.0,0.5,10.0,0,5,60.0,IFCT2017
+Neem leaves,Neem patta,herbs,pan-india,veg,58,7.1,0.7,218,218.0,0,0,15.9,0.5,0,0,0,5.0,IFCT2017
+Bitter gourd juice,Karela ras,beverages,pan-india,veg,17,1.0,0.6,20,84.0,0,0,3.7,0.2,2.8,0,5,8.0,IFCT2017
+Amla juice,Amla ras,beverages,pan-india,veg,25,0.5,0.7,30,360.0,0,0,6.1,0.4,2.0,0,2,10.0,IFCT2017
+Wheatgrass juice,Gehun ghaas ras,beverages,pan-india,veg,21,2.0,0.6,24,3.0,0,0,4.5,0.1,0.5,0,5,15.0,IFCT2017
+Mung bean (whole),Sabut moong,pulses,pan-india,veg,347,24.0,4.4,124,4.8,0,0,59.2,1.2,16.3,6.6,15,8.0,IFCT2017
+Black-eyed peas,Lobia,pulses,pan-india,veg,336,23.5,8.0,411,1.5,0,0,54.5,2.0,10.6,0,58,10.0,IFCT2017
+Horse gram,Kulthi,pulses,south-india,veg,321,22.0,6.8,287,1.0,0,0,57.2,0.5,5.3,0,26,8.0,IFCT2017
+Moth bean,Matki,pulses,west-india,veg,343,23.6,9.5,202,2.0,0,0,61.5,1.6,4.5,0,30,10.0,IFCT2017
+Cowpea,Chawli,pulses,pan-india,veg,344,23.4,8.6,77,1.4,0,0,54.5,2.0,10.6,0,58,9.0,IFCT2017
+Cluster beans (guar),Guar phali,vegetables,west-india,veg,16,3.2,1.08,130,49.0,0,0,10.8,0.4,4.9,0,7,6.0,IFCT2017
+Lotus stem,Kamal kakdi,vegetables,north-india,veg,74,2.6,1.2,45,44.0,0,0,17.2,0.1,4.9,0,45,15.0,IFCT2017
+Yam (suran),Suran,vegetables,pan-india,veg,118,1.5,0.5,17,17.1,0,0,27.9,0.2,4.1,0.5,9,6.0,IFCT2017
+Colocasia (arbi),Arbi,vegetables,pan-india,veg,97,3.0,0.5,40,4.5,0,0,23.6,0.1,4.1,0,11,5.0,IFCT2017
+Raw banana,Kachcha kela,fruits,south-india,veg,89,1.3,0.6,3,9.0,0,0,23.4,0.1,2.6,12.2,4,4.0,IFCT2017
+Jackfruit seeds,Kathal ke beej,seeds,south-india,veg,98,6.6,1.5,50,11.0,0,0,18.4,0.4,1.5,0,3,5.0,IFCT2017
+Watermelon seeds,Tarbooz ke beej,seeds,pan-india,veg,557,28.3,7.3,54,0,0,0,15.3,47.4,0,0,99,20.0,IFCT2017
+Muskmelon,Kharbooja,fruits,pan-india,veg,34,0.8,0.4,17,36.7,0,0,8.2,0.2,0.9,7.9,16,5.0,IFCT2017
+Starfruit,Kamrakh,fruits,pan-india,veg,31,1.0,0.1,3,34.4,0,0,6.7,0.3,2.8,3.9,2,15.0,IFCT2017
+Bael fruit,Bel,fruits,pan-india,veg,137,1.8,0.6,85,8.0,0,0,31.8,0.3,2.9,0,55,10.0,IFCT2017
+Karonda (natal plum),Karonda,fruits,pan-india,veg,42,1.1,1.3,21,9.0,0,0,9.6,0.5,2.9,0,3,8.0,IFCT2017
+Phool makhana (lotus seeds),Makhana,seeds,east-india,veg,347,9.7,1.4,60,0,0,0,76.9,0.1,14.5,0,1,80.0,IFCT2017
+Rajgira (amaranth) flour,Rajgira atta,cereals,pan-india,veg,371,13.6,7.6,159,4.2,0,0,65.3,7.0,6.7,1.7,4,15.0,IFCT2017
+Buckwheat,Kuttu,cereals,north-india,veg,343,13.3,2.2,18,0,0,0,71.5,3.4,10.0,0,1,20.0,IFCT2017
+Water chestnut,Singhara,vegetables,north-india,veg,97,4.0,0.6,20,6.0,0,0,23.3,0.5,3.0,0,14,8.0,IFCT2017
